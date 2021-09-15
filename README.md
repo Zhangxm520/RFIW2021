@@ -24,10 +24,10 @@ If you want to run the code for Track 1, you need to:
 ### Main Documents:  
 #### 1. Track1/sample0     
 Our method requires that the sample pairs in each minimum batch come from different families, and to ensure that the results are reproducible, we have sorted the sample pairs. The current folder keeps the sorted sample pairs.These sample pairs are taken from the official documents provided.  
->>train_sort.txt: save the sample pairs for training.  
-val_choose.txt:selected partial samples from the validation set are used for model selection.  
-val.txt: the validation set sample pairs are used to derive the threshold values.  
-test.txt: for testing.  
+>>**train_sort.txt**: save the sample pairs for training.  
+**val_choose.txt**:selected partial samples from the validation set are used for model selection.  
+**val.txt**: the validation set sample pairs are used to derive the threshold values.  
+**test.txt**: for testing.  
 
 
 #### 2. Track1/train.py  
