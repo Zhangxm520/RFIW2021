@@ -73,7 +73,7 @@ train.py can directly calculate the model prediction threshold, and the threshol
 ## Track3
 Use the trained model from Track 1 to complete the prediction of Track 3. PyTorch do it.     
 #### 1. Track3/test.py    
-get Track 3 results and  the main parameters are:
+Get Track 3 results and  the main parameters are:
 >>sample_root: Track3/sample.  
 model_path: Track 1 trained model path.      
 batch_size :default 40.  
