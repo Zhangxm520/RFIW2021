@@ -2,7 +2,7 @@
 The code and data we (TeamCNU) used to participate in the RFIW 2021 Data Challenge.     
 We achieved first place in all three tasks.  
 Experimental data are provided by RFIW official [RFIW 2021](https://competitions.codalab.org/competitions/21843#learn_the_details).  
-Datasets and some introduction to RFIW 2020 [RFIW 2020 Website](https://web.northeastern.edu/smilelab/rfiw2020/).  
+Datasets and some introduction about RFIW 2020 [RFIW 2020 Website](https://web.northeastern.edu/smilelab/rfiw2020/).  
 
 ## Dataset
 We use The Families In the Wild dataset, we align the faces and crop them to 112*112 pixels, there is a dataset.zip for each task that contains the dataset used for the current task, please unzip it before running the code.  
