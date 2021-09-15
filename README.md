@@ -19,7 +19,7 @@ Requires a GPU with 10G of video memory.
 ## Track1 
 We use pytorch to implement Track 1.  
 If you want to run the code for Track 1, you need to:  
-&#8195**1. Copy backbone/kit_resnet101.pkl to the Track1 directory.**  
+&nbsp **1. Copy backbone/kit_resnet101.pkl to the Track1 directory.**  
   **2. unzip Track1/dataset.zip**  
 
 
