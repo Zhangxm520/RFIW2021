@@ -24,7 +24,7 @@ If you want to run the code for Track 1, you need to:
 
 
 ### Main Documents:  
-**1. Track1/sample0**   
+#### 1. Track1/sample0     
 Our method requires that the sample pairs in each minimum batch come from different families, and to ensure that the results   
 are reproducible, we have sorted the sample pairs. The current folder keeps the sorted sample pairs.These sample pairs are taken  
 from the official documents provided.  
@@ -34,7 +34,7 @@ val.txt: the validation set sample pairs are used to derive the threshold values
 test.txt: for testing.  
 
 
-**2. Track1/train.py**  
+#### 2. Track1/train.py  
 Training Model and the main parameters are:  
 >>batch_size : default 25.  
 sample  : corresponding to the sorted sample pair folder, corresponding to /Track1/sample0 just mentioned.  
@@ -48,7 +48,7 @@ python train.py --batch_size 25 --sample Track1/sample0 \
                 --save_path Track1/model_name.pth \  
                 --epochs 80 --beta 0.08 --log_path Track1/log_name.txt --gpu 0  
 ```
-**3. Track1/find.py**  
+#### 3. Track1/find.py    
 Finding the threshold and the main parameters are:  
 >>sample: Track1/sample0.  
 save_path: model paths saved via train.py.  
@@ -61,7 +61,7 @@ python find.py  --sample Track1/sample0 \
                 --batch_size 40 --log_path Track1/log_name.txt --gpu 0 
 ```
 
-**4. Track1/test.py**  
+#### 4. Track1/test.py    
 test the model   
 ```
 python test.py  --sample Track1/sample0 \  
@@ -76,7 +76,7 @@ train.py can directly calculate the model prediction threshold, and the threshol
 
 ## Track3
 Use the trained model from Track 1 to complete the prediction of Track 3. PyTorch do it.     
-**1. Track3/test.py**  
+#### 1. Track3/test.py    
 get Track 3 results and  the main parameters are:
 >>sample_root: Track3/sample.  
 model_path: Track 1 trained model path.      
