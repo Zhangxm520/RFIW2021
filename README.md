@@ -5,9 +5,7 @@ Experimental data are provided by RFIW official [RFIW 2021](https://competitions
 Datasets and some introduction about RFIW 2020 [RFIW 2020 Website](https://web.northeastern.edu/smilelab/rfiw2020/).  
 
 ## Dataset
-We use The Families In the Wild dataset, we align the faces and crop them to 112*112 pixels, there is a dataset.zip for each task that   
-contains the dataset used for the current task, please unzip it before running the code.  The dataset is completely official, we just   
-align and crop the faces.
+We use The Families In the Wild dataset, we align the faces and crop them to 112*112 pixels, there is a dataset.zip for each task that contains the dataset used for the current task, please unzip it before running the code.  The dataset is completely official, we just align and crop the faces.  
 
 ## Pre-training models
 We use the ArcFace pre-trained ResNet101 as the feature extraction network, and the code is mainly from [here](https://github.com/dmlc/gluon-cv).The models were pre-trained using mxnet, and we used MMdnn to convert the pre-trained models into pytorch version and Tensorflow 2.0, corresponding to backbone/kit_resnet101.pkl and backbone/ArcFace_r100_v1.h5, respectively.  
@@ -25,9 +23,7 @@ If you want to run the code for Track 1, you need to:
 
 ### Main Documents:  
 #### 1. Track1/sample0     
-Our method requires that the sample pairs in each minimum batch come from different families, and to ensure that the results   
-are reproducible, we have sorted the sample pairs. The current folder keeps the sorted sample pairs.These sample pairs are taken  
-from the official documents provided.  
+Our method requires that the sample pairs in each minimum batch come from different families, and to ensure that the results are reproducible, we have sorted the sample pairs. The current folder keeps the sorted sample pairs.These sample pairs are taken from the official documents provided.  
 >>train_sort.txt: save the sample pairs for training.  
 val_choose.txt:selected partial samples from the validation set are used for model selection.  
 val.txt: the validation set sample pairs are used to derive the threshold values.  
