@@ -10,8 +10,7 @@ contains the dataset used for the current task, please unzip it before running t
 align and crop the faces.
 
 ## Pre-training models
-We use the ArcFace pre-trained ResNet101 as the feature extraction network, and the code is mainly from [here](https://github.com/dmlc/gluon-cv).  
-The models were pre-trained using mxnet, and we used MMdnn to convert the pre-trained models into pytorch version and Tensorflow 2.0, corresponding to backbone/kit_resnet101.pkl and backbone/ArcFace_r100_v1.h5, respectively.  
+We use the ArcFace pre-trained ResNet101 as the feature extraction network, and the code is mainly from [here](https://github.com/dmlc/gluon-cv).The models were pre-trained using mxnet, and we used MMdnn to convert the pre-trained models into pytorch version and Tensorflow 2.0, corresponding to backbone/kit_resnet101.pkl and backbone/ArcFace_r100_v1.h5, respectively.  
 
 ## GPU
 Requires a GPU with 10G of video memory.  
