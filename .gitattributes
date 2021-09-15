@@ -1,0 +1,6 @@
+backbone/ArcFace_r100_v1.h5 filter=lfs diff=lfs merge=lfs -text
+backbone/kit_resnet101.pkl filter=lfs diff=lfs merge=lfs -text
+Track1/dataset.zip filter=lfs diff=lfs merge=lfs -text
+Track2/dataset.zip filter=lfs diff=lfs merge=lfs -text
+Track3/dataset.zip filter=lfs diff=lfs merge=lfs -text
+Track2/sample0/train.txt filter=lfs diff=lfs merge=lfs -text
