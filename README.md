@@ -58,7 +58,7 @@ python find.py  --sample Track1/sample0 \
 ```
 
 #### 4. Track1/test.py    
-test the model   
+Test the model   
 ```
 python test.py  --sample Track1/sample0 \  
                 --save_path Track1/model_name.pth \  
