@@ -65,6 +65,8 @@ python test.py  --sample Track1/sample0 \
                 --threshold 0.1( calculated by find.py) \  
                 --batch_size 40 --log_path Track1/log_name.txt --gpu 0 
 ```
+In our environment, we achieved the best model at the 42nd epoch. We believe that it is normal for the final results obtained to fluctuate up and down due to software version differences.  
+  
 ## Track2
 We have implemented Track 2 using tensorflow 2.  
 Basically the same as task 1, only need to copy ArcFace_r100_v1.h5 to the Track2 folder.  
