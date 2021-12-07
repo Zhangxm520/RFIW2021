@@ -32,7 +32,7 @@ def training(args):
     for epoch_i in range(epochs):
         mylog("\n*************",path=log_path)
         mylog('epoch ' + str(epoch_i+ 1),path=log_path)
-        compare_loss_epoch = 0
+        contrastive_loss_epoch = 0
 
         model.train()
 
@@ -41,13 +41,13 @@ def training(args):
 
             e1,e2,x1,x2= model([image1,image2])
 
-            loss = compare_loss(x1,x2,beta=beta)
+            loss = contrastive_loss(x1,x2,beta=beta)
 
             optimizer_model.zero_grad()
             loss.backward()
             optimizer_model.step()
 
-            compare_loss_epoch += loss.item()
+            contrastive_loss_epoch += loss.item()
             
             if (index_i+1)==steps_per_epoch:
                 break
@@ -55,7 +55,7 @@ def training(args):
         use_sample=(epoch_i+1)*batch_size*steps_per_epoch
         train_dataset.set_bias(use_sample)
 
-        mylog("compare_loss:" + "%.6f" % (compare_loss_epoch / steps_per_epoch),path=log_path)
+        mylog("contrastive_loss:" + "%.6f" % (contrastive_loss_epoch / steps_per_epoch),path=log_path)
         model.eval()
         with torch.no_grad():
             auc = val_model(model, val_loader)
