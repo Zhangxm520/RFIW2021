@@ -8,9 +8,9 @@ beta=0.08
 @tf.function
 def compute2_loss(y_ture,y_pred):
     father_em,mother_em,child_em=tf.split(y_pred,3,1)
-    return compare2_loss(father_em,child_em)+compare2_loss(mother_em,child_em)
+    return contrastive2_loss(father_em,child_em)+contrastive2_loss(mother_em,child_em)
 
-def compare2_loss(x1,x2):
+def contrastive2_loss(x1,x2):
     x1x2=tf.concat([x1,x2],axis=0)
     x2x1=tf.concat([x2,x1],axis=0)
     cosine_mat=compute_cosine(tf.expand_dims(x1x2,axis=1),tf.expand_dims(x1x2,axis=0),axis=2)/beta
