@@ -3,7 +3,7 @@ import numpy as np
 from Track1.utils import *
 
 
-def compare_loss(x1,x2,beta=0.08):
+def contrastive_loss(x1,x2,beta=0.08):
     x1x2=torch.cat([x1,x2],dim=0)
     x2x1=torch.cat([x2,x1],dim=0)
 
