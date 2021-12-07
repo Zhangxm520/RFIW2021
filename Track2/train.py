@@ -32,16 +32,16 @@ def training(args):
         mylog('epoch ' + str(epoch_i + 1), path=log_path)
 
         n = 0
-        compare_loss_epoch = 0
+        contrastive_loss_epoch = 0
         while True:
             father,mother,child,label=train_dataset.get_batch_pairs_image(batch_size)
             loss=model.train_on_batch([father,mother,child],tf.zeros((batch_size)))
-            compare_loss_epoch += loss
+            contrastive_loss_epoch += loss
             n = n + 1
             if n == steps_per_epoch:
                 break
 
-        mylog("compare_loss:" + "%.6f" % (compare_loss_epoch / steps_per_epoch), path=log_path)
+        mylog("contrastive_loss:" + "%.6f" % (contrastive_loss_epoch / steps_per_epoch), path=log_path)
         auc ,threshold = val_model(save_model, val_dataset ,batch_size=val_batch_size)
         mylog("auc is %.6f "% auc,path=log_path)
         if max_auc < auc:
