@@ -1,4 +1,5 @@
 # RFIW 2021
+Official implementation of "Supervised Contrastive Learning for Facial Kinship Recognition".       
 The code and data we (TeamCNU) used to participate in the RFIW 2021 Data Challenge.     
 We achieved first place in all three tasks.  
 Experimental data are provided by RFIW official [RFIW 2021](https://competitions.codalab.org/competitions/21843#learn_the_details).  
