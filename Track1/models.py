@@ -10,8 +10,8 @@ class Net(torch.nn.Module):
         self.projection=nn.Sequential(
             torch.nn.Linear(512, 256),
             torch.nn.BatchNorm1d(256),
-            torch.nn.Linear(256, 128),
             torch.nn.ReLU(),
+            torch.nn.Linear(256, 128),
         )
         self._initialize_weights()
 
