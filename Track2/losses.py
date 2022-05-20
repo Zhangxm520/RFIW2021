@@ -15,9 +15,7 @@ def contrastive2_loss(x1,x2):
     x2x1=tf.concat([x2,x1],axis=0)
     cosine_mat=compute_cosine(tf.expand_dims(x1x2,axis=1),tf.expand_dims(x1x2,axis=0),axis=2)/beta
 
-    mask=tf.eye(x1.shape[0])
-    mask=tf.concat([mask,mask],axis=0)
-    mask = 1.0-tf.concat([mask, mask], axis=1)
+    mask=1.0-tf.eye(2*x1.shape[0])
 
     numerators = tf.exp(compute_cosine(x1x2,x2x1,axis=1)/beta)
     denominators=tf.reduce_sum(tf.exp(cosine_mat)*mask,axis=1)
