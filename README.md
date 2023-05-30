@@ -94,40 +94,12 @@ python test.py  --sample_root Track3/sample \
 ## Citations  
 
 ```
-@article{robinson2021survey,
-    title = {Survey on the Analysis and Modeling of Visual Kinship: A Decade In the Making},
-    author = {Robinson, Joseph P and Shao, Ming and Fu, Yun},
-    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)},
-    publisher = {IEEE Computer Society},
-    number = {01},
-    pages = {1--1},
-    year = {2021},
+@inproceedings{zhang2021supervised,
+  title={Supervised contrastive learning for facial kinship recognition},
+  author={Zhang, Ximiao and Min, XU and Zhou, Xiuzhuang and Guo, Guodong},
+  booktitle={2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021)},
+  pages={01--05},
+  year={2021},
+  organization={IEEE}
 }
-
-@inproceedings{robinson2020recognizing,
-    title = {Recognizing Families In the Wild (RFIW): The 4th Edition},
-    author = {Robinson, Joseph P and Yin, Yu and Khan, Zaid and Shao, Ming and Xia, Siyu and Stopa, Michael and Timoner, Samson and Turk, Matthew A and Chellappa, Rama and Fu, Yun},
-    booktitle = {15th IEEE International Conference on Automatic Face and Gesture Recognition},
-    organization = {IEEE},
-    pages = {857--862},
-    year = {2020},
-}
-
-@article{robinson2018fiw,
-    author = {Robinson, Joseph P and Shao, Ming and Wu, Yue and Liu, Hongfu and Gillis, Timothy and Fu, Yun},
-    title = {Visual Kinship Recognition of Families In the Wild},
-    journal = {IEEE Transactions on pattern analysis and machine intelligence (PAMI)},
-    publisher = {IEEE Computer Society},
-    year = {2018},
-}
-
-@inproceedings{robinson2016fiw,
-    title = {Families In the Wild (FIW): Large-Scale Kinship Image Database and Benchmarks},
-    author = {Robinson, Joseph P and Shao, Ming and Wu, Yue and Fu, Yun},
-    booktitle = {Proceedings of the 2016 ACM on Multimedia Conference},
-    organization = {ACM}
-    pages = {242--246},
-    year = {2016},
-}
-
 ```
